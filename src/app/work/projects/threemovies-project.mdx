@@ -1,0 +1,42 @@
+---
+title: "ThreeMovies: A Shared Cinematic Experience for Couples"
+publishedAt: "2024-06-10"
+summary: "ThreeMovies is a collaborative platform designed for movie-loving couples to synchronize their cinematic journeys. Built with Flutter, it features a unique 'MovieMate' pairing system, shared watchlists, and personalized ratings, all powered by a high-performance integration with the TMDB API and Firebase."
+images:
+  - "/images/projects/project-04/cover-01.png"
+  - "/images/projects/project-04/cover-02.png"
+  - "/images/projects/project-04/cover-03.png"
+team:
+  - name: "Cesar Marines"
+    role: "Full Stack Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/cmarines/"
+link: "https://3movies-flutter.vercel.app/"
+---
+
+## Overview
+
+**ThreeMovies** is more than just a movie tracker; it is a shared space for couples to document their passion for cinema. The core of the platform is the **MovieMate** feature, which allows two users to link their accounts via a unique pairing code. Once connected, couples can collaboratively manage a shared "Watchlist," rate the films they've seen together, and keep a detailed history of their movie nights, ensuring that no "must-watch" film is ever forgotten.
+
+## Key Features
+
+- **MovieMate Pairing System**: A seamless connection process where users generate and share a unique code to link profiles and synchronize their movie data in real-time.
+- **Collaborative Watchlist**: A shared queue where both partners can add, remove, and prioritize movies they plan to watch in the future.
+- **Shared Viewing History & Ratings**: A dedicated space to log watched movies, assign personal ratings, and track how much both users enjoyed each film.
+- **Cross-Platform Accessibility**: Developed in Flutter to provide a consistent and fluid experience across both Android devices and Web browsers.
+- **Real-Time Sync**: Instant updates across devices whenever a partner adds a movie or updates a rating, powered by Firebase.
+
+## Technologies Used
+
+- **Frontend (Flutter)**: A single codebase approach to deliver a native feel on Android and high performance on the Web. The UI focuses on vibrant, movie-centric aesthetics.
+- **Backend & Auth (Firebase)**: Utilizes **Firebase Authentication** for secure sign-ins and **Cloud Firestore** for real-time data synchronization between paired MovieMates.
+- **Movie Data (TMDB API)**: Integration with The Movie Database (TMDB) to fetch up-to-date information on thousands of movies, including posters, synopses, and release dates.
+- **Optimized Caching System**: Implementation of a custom storage layer that caches API responses. This reduces redundant calls to TMDB, optimizes data consumption, and significantly improves the snappiness of the user interface.
+
+## Challenges and Learnings
+
+One of the main technical challenges was architecting the **real-time synchronization logic** for paired users. It required careful Firestore rule management to ensure that data was only accessible to the specific "MovieMate" pair. Additionally, to provide a premium user experience, I focused heavily on **API optimization**. By building a local storage and caching mechanism, I was able to handle high volumes of movie data without hitting rate limits or causing lag during search queries, resulting in a much smoother browsing experience.
+
+## Outcome
+
+ThreeMovies successfully bridged the gap between personal movie tracking and social sharing. The platform is currently live and fully functional on both Android and Web. It has proven to be an intuitive solution for couples, eliminating the "what should we watch?" dilemma through its collaborative tools. The project stands as a testament to the power of Flutter for rapid, cross-platform development with a complex, real-time backend.

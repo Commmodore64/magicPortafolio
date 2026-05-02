@@ -65,9 +65,9 @@ const home = {
   },
   subline: (
     <>
-      I'm Cesar, a full stack web developer.
-      <br />I specialize in building web applications using the latest
-      technologies.
+      I'm Cesar, a Full Stack Engineer.
+      <br />I specialize in building scalable, high-performance web applications
+      with modern technologies.
     </>
   ),
 };
@@ -93,12 +93,11 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        I'm an engineer and currently work as a Full Stack developer, passionate
-        about designing and developing modern web platforms using cutting-edge
-        technologies. My journey began with a TSU degree, and my professional
-        path has led me to establish myself in the world of software
-        development. I'm committed to building the digital future through
-        innovative and high-quality solutions.
+        I am an Engineer and currently work as a Full Stack Developer,
+        passionate about architecting and developing modern web platforms using
+        cutting-edge technologies. My professional journey is driven by
+        technical excellence and a commitment to building the digital future
+        through innovative, scalable, and high-quality software solutions.
       </>
     ),
   },
@@ -106,6 +105,41 @@ const about = {
     display: true, // set to false to hide this section
     title: "Work Experience",
     experiences: [
+      {
+        company: "Mobinsa",
+        timeframe: "November 2025 - Present",
+        role: "Full Stack Developer & IT Specialist",
+        achievements: [
+          <>
+            Developed and deployed a secure internal E-learning platform using
+            Next.js and Synology NAS to streamline staff onboarding for new
+            business systems.
+          </>,
+          <>
+            Led the technical implementation and integration of ERP and CRM
+            solutions to optimize company-wide operational workflows and data
+            management.
+          </>,
+          <>
+            Managed local network infrastructure and provided comprehensive
+            technical support, ensuring high availability of internal digital
+            services and hardware.
+          </>,
+          <>
+            Implemented a passwordless Magic Link authentication system and
+            custom video tracking middleware to enhance user experience and
+            training analytics.
+          </>,
+        ],
+        images: [
+          {
+            src: "/images/projects/project-03/cover-01.png",
+            alt: "Mobinsa E-learning and Systems Implementation",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
       {
         company: "Soluciones Moviles y Comunicaciones",
         timeframe: "July 2024 - Present",

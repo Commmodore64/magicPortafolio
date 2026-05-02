@@ -1,0 +1,41 @@
+---
+title: "Mobisna E-Learning: Secure Internal Training Platform for ERP & CRM Onboarding"
+publishedAt: "2026-04-25"
+summary: "A private, local-network training platform developed for Mobisna to facilitate staff onboarding. Built as a Full Stack Next.js solution, it features Synology NAS integration for secure video storage, passwordless 'Magic Link' authentication, and a custom tracking middleware to monitor precise user progress."
+images:
+  - "/images/projects/project-03/cover-01.png"
+team:
+  - name: "Cesar Marines"
+    role: "Full Stack Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/cmarines/"
+link: "https://mobisna.com/"
+---
+
+## Overview
+
+Developed as a strategic tool for **Mobisna**, this internal training platform was born from the necessity to onboard staff onto new ERP and CRM implementations efficiently. Prioritizing security and ease of use, the platform operates exclusively within the company's local network. It eliminates the need for traditional usernames and passwords by utilizing a **Magic Link** system, where administrators trigger personalized access via email, directing employees straight to their assigned video modules.
+
+## Key Features
+
+- **Passwordless Magic Link Access**: Simplifies user entry by generating unique, time-sensitive tokens sent via email, removing authentication barriers for staff.
+- **Smart Video Persistence**: Features an intuitive "resume where you left off" capability, tracking individual progress across video modules to enhance the learning flow.
+- **Course Lifecycle Management**: Administrators can define the "time-to-live" for each course, ensuring training is completed within specific project milestones.
+- **Local Network Security**: Restricted deployment within Mobisna’s private infrastructure to protect sensitive internal processes and system walkthroughs.
+- **Secure Video Middleware**: A custom intermediary system that serves video content securely, prevents unauthorized downloads, and calculates precise watch time per user.
+
+## Technologies Used
+
+- **Full Stack Framework (Next.js & Tailwind CSS)**: Next.js was leveraged for both the frontend interface and the backend API logic. This unified approach allowed for seamless state management between the video player and the tracking server.
+- **Database (PostgreSQL)**: A robust relational database used to store employee records, course assignments, and the high-precision timestamp markers required for progress tracking.
+- **Storage (Synology NAS)**: Utilized as a high-capacity local storage solution for hosting high-definition video assets, ensuring fast delivery within the internal network without relying on external cloud costs.
+- **SMTP Integration**: A robust email service integration to deliver access links instantly to employee inboxes.
+- **Custom Streaming & Analytics**: An intermediate security layer implemented to proxy video requests from the NAS, ensuring that only authenticated users via Magic Links can access the stream while simultaneously logging engagement metrics.
+
+## Challenges and Learnings
+
+The primary challenge was balancing high security with extreme user-friendliness. Implementing the **Magic Link** logic required a robust tokenization strategy to ensure links were secure. A significant technical hurdle was the integration of the **Synology NAS** with the Next.js backend; we developed a secure intermediary service to stream content while protecting the direct source path. Additionally, optimizing the video state synchronization ensured that progress was saved accurately, even during network fluctuations within the local infrastructure.
+
+## Outcome
+
+The platform has become a cornerstone of Mobisna’s digital transformation. By removing the friction of manual logins and providing a Netflix-like "resume" experience, the company saw a significant increase in training completion rates. This direct approach ensured that the transition to the new ERP and CRM systems was smooth, with staff feeling well-supported and informed through a modern, intuitive, and highly secure learning environment.
