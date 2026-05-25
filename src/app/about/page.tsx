@@ -156,7 +156,7 @@ export default function About() {
                           variant="secondary"
                         />
                       </React.Fragment>
-                    )
+                    ),
                 )}
               </Flex>
             )}
@@ -214,7 +214,7 @@ export default function About() {
                     </Text>
                     <Column as="ul" gap="16">
                       {experience.achievements.map(
-                        (achievement: JSX.Element, index: number) => (
+                        (achievement: React.ReactNode, index: number) => (
                           <Text
                             as="li"
                             variant="body-default-m"
@@ -222,7 +222,7 @@ export default function About() {
                           >
                             {achievement}
                           </Text>
-                        )
+                        ),
                       )}
                     </Column>
                     {experience.images.length > 0 && (
