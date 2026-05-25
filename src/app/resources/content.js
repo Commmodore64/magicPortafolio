@@ -13,7 +13,7 @@ const person = {
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Subscribe to {person.firstName}&apos;s Newsletter</>,
   description: (
     <>
       I occasionally write about design, technology, and share thoughts on the
@@ -65,7 +65,7 @@ const home = {
   },
   subline: (
     <>
-      I'm Cesar, a Full Stack Engineer.
+      I&apos;m Cesar, a Full Stack Engineer.
       <br />I specialize in building scalable, high-performance web applications
       with modern technologies.
     </>
